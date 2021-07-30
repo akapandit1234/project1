@@ -1,0 +1,14 @@
+<h1>Hello World</h1>
+
+Hi {{name}}, you are of {{age}} years old and you are an {{nationality}}.<br>
+
+
+<h3>Education Details: </h3><br>
+{% if education %}
+    {% for each in education %}
+        you did your {{each.type}} at {{each.name}} in {{each.location}} with {{each.marks}}<br>
+    {% endfor %}
+{% else %}
+    No Education Details Available
+{% endif %}
+
